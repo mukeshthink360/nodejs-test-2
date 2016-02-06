@@ -1,5 +1,5 @@
 {
-    "mongoURI": "mongodb://nodejs-test-2:nodejs-test-2@ds059215.mongolab.com:59215/nodejs-test-2",
+    "mongoURI": "mongo db connection uri here",
     "secret": "nodejs-test-2",
-    "stripeApiKey": "sk_test_zH6Kefvy3Qo8erkF8izJZu5E"
+    "stripeApiKey": "key here"
 }
