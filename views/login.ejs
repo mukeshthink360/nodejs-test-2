@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="span12">
+        <div id="loginModal" class="">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h3>Login or Sign Up</h3>
+            </div>
+            <div class="modal-body">
+                <div class="well">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#login">Login</a></li>
+                        <li><a data-toggle="tab" href="#create">Register</a></li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div id="login" class="tab-pane active in">
+                            <form method="POST" action="/authenticate" class="form-group" id="login-form">
+
+                                <div id="legend">
+                                    <legend class="">Login</legend>
+                                </div>
+                                <label for="name">Username</label>
+                                <input type="text" class="form-control" placeholder="Username" name="name" id="login-name">
+                                <label for="password">Password</label>
+
+                                <input type="password" class="form-control" placeholder="password" name="password" id="login-password"><br>
+                                <button class="btn btn-primary" id="login-btn">Login</button>
+                            </form>
+                        </div>
+                        <div id="create" class="tab-pane fade">
+                            <form method="POST" action="/register" class="fform-group" id="tab">
+                                <div id="legend">
+                                    <legend class="">Register</legend>
+                                </div>
+                                <label for="name">Username</label>
+                                <input type="text" class="form-control" placeholder="" name="name" id="create-name">
+                                <!-- Password-->
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" placeholder="" name="password" id="create-password"><br>
+                                <button class="btn btn-success" id="register-btn">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="span12">
+        <div id="loginModal" class="">
+            <div class="modal-header">
+                <h1>Transactions page</h1>
+                <p hidden=""><span id="token"><%=token%></span></p>
+            </div>
+            <div class="modal-body">
+                <div class="well">
+                    <h2>Create Stripe Payments</h2>                    
+                    <div class="form-group" id="form">
+                        <form id="createTransaction">
+							<label for="amount">Amount:</label>
+							<input type="number" id="amount" name="amount" class="form-control"><br>
+							<label for="currency">Currency: </label>
+							<input type="text" id="currency" name="currency" class="form-control"><br>
+							<label for="cardnumber">Card number </label>
+							<input type="text" id="cardnumber" name="customerid" class="form-control"><br>
+							<label for="cvc">CVC: </label>
+							<input type="number" id="cvc" name="cvc" class="form-control"><br>
+							<label for="card-expiry-month">Expired Month: </label>
+							<input type="number" id="card-expiry-month" name="card-expiry-month" class="form-control"><br>
+							<label for="card-expiry-year">Expired Year: </label>
+							<input type="number" id="card-expiry-year" name="card-expiry-year" class="form-control"><br>
+							<p class="payment-errors" style="color:red;"></p>
+							<p class="payment-success" style="color:green;"></p>
+							<input type="button" value="Pay" id="submittransaction" class="btn btn-primary submittransaction">
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
